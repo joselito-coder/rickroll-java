@@ -10,7 +10,6 @@ class Mouse extends Thread {
         try {
             Robot robot = new Robot();
             while (true) {
-                // TimeUnit.MILLISECONDS.sleep(100);
                 robot.mouseMove(0, 0);
             }
         } catch (Exception e) {
@@ -37,10 +36,14 @@ public class Rickroll {
             try {
                 // Disable their mouse while watching
                 Mouse m = new Mouse();
+                // The below will open The rick roll
                 Desktop.getDesktop().browse(new URI("https://www.youtube.com/watch?v=dQw4w9WgXcQ"));
                 m.start();
+                // Wait 20 seconsd before pressing the k button
                 TimeUnit.SECONDS.sleep(20);
                 pressK();
+
+                // The below line will open the epic sax guy song
                 Desktop.getDesktop().browse(new URI("https://www.youtube.com/watch?v=Tg4u7ko333U"));
                 TimeUnit.SECONDS.sleep(40);
             } catch (Exception e) {
