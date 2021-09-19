@@ -1,10 +1,7 @@
 import java.awt.event.KeyEvent;
-import java.security.Key;
 import java.util.concurrent.TimeUnit;
 import java.awt.*;
-import java.io.IOException;
 import java.net.URI;
-import java.net.URISyntaxException;
 
 // Use the Mouse class as thread as this will disable the user from moving their mouse
 class Mouse extends Thread {
